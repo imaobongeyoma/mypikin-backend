@@ -1,7 +1,6 @@
 const knex = require("knex")(require("../knexfile"));
 const jwt = require("jsonwebtoken");
-const { db } = require("../connect.js");
-const mysql = require("mysql2");
+const { db } = require("../connect");
 require("dotenv").config();
 
 //register (signup)

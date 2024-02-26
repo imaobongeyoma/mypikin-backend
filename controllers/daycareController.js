@@ -1,5 +1,6 @@
 const knex = require("knex")(require("../knexfile"));
-const { db } = require("../connect.js");
+require("dotenv").config();
+const { db } = require("../knexfile.js");
 
 //Get only daycare info for daycare
 const singleDaycare = async (req, res) => {
@@ -49,6 +50,7 @@ const daycaresList = async (req, res) => {
   }
 };
 
+//createdaycare
 const createDaycare = async (req, res) => {
   try {
 

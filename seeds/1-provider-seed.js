@@ -246,5 +246,17 @@ exports.seed = async function (knex) {
       background_check_done: "Yes",
       role: "Provider",
     },
+    {
+      id: 21,
+      username: "tina",
+      password: "tinapw",
+      email: "tinal@example.com",
+      first_name: "Tina",
+      last_name: "Lucas",
+      phone_number: "999-333-4678",
+      profile_image: "/admin1.jpg",
+      background_check_done: "Yes",
+      role: "Admin",
+    },
   ]);
 };

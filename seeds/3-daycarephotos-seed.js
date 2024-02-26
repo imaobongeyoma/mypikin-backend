@@ -306,5 +306,105 @@ exports.seed = async function (knex) {
       daycare_id: 20,
       daycarephoto: "/image60.jpg",
     },
+    {
+      id: 61,
+      daycare_id: 1,
+      daycarephoto: "/image3b.jpg"
+    },
+    {
+      id: 62,
+      daycare_id: 2,
+      daycarephoto: "/image6b.jpg"
+    },
+    {
+      id: 63,
+      daycare_id: 3,
+      daycarephoto: "/image9b.jpg"
+    },
+    {
+      id: 64,
+      daycare_id: 4,
+      daycarephoto: "/image12b.jpg"
+    },
+    {
+      id: 65,
+      daycare_id: 5,
+      daycarephoto: "/image15b.jpg"
+    },
+    {
+      id: 66,
+      daycare_id: 6,
+      daycarephoto: "/image18b.jpg"
+    },
+    {
+      id: 67,
+      daycare_id: 7,
+      daycarephoto: "/image21b.jpg"
+    },
+    {
+      id: 68,
+      daycare_id: 8,
+      daycarephoto: "/image24b.jpg"
+    },
+    {
+      id: 69,
+      daycare_id: 9,
+      daycarephoto: "/image27b.jpg"
+    },
+    {
+      id: 70,
+      daycare_id: 10,
+      daycarephoto: "/image30b.jpg"
+    },
+    {
+      id: 71,
+      daycare_id: 11,
+      daycarephoto: "/image33b.jpg"
+    },
+    {
+      id: 72,
+      daycare_id: 12,
+      daycarephoto: "/image36b.jpg"
+    },
+    {
+      id: 73,
+      daycare_id: 13,
+      daycarephoto: "/image39b.jpg"
+    },
+    {
+      id: 74,
+      daycare_id: 14,
+      daycarephoto: "/image42b.jpg"
+    },
+    {
+      id: 75,
+      daycare_id: 15,
+      daycarephoto: "/image45b.jpg"
+    },
+    {
+      id: 76,
+      daycare_id: 16,
+      daycarephoto: "/image48b.jpg"
+    },
+    {
+      id: 77,
+      daycare_id: 17,
+      daycarephoto: "/image51b.jpg"
+    },
+    {
+      id: 78,
+      daycare_id: 18,
+      daycarephoto: "/image54b.jpg"
+    },
+    {
+      id: 79,
+      daycare_id: 19,
+      daycarephoto: "/image57b.jpg"
+    },
+    {
+      id: 80,
+      daycare_id: 20,
+      daycarephoto: "/image60b.jpg"
+    }
   ]);
 };

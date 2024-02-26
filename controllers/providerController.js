@@ -1,53 +1,5 @@
 const knex = require("knex")(require("../knexfile"));
-const jwt = require("jsonwebtoken");
 require("dotenv").config();
-
-// //create user
-// const createUser = async (req, res) => {
-//     try {
-//       const result = await knex("users").insert(req.body);
-//       const newUser = await knex("users").where({ id: result[0] });
-  
-//       res.status(201).json(newUser);
-//     } catch (error) {
-//       res.status(500).send(`Unable to create new user: ${error}`);
-//     }
-//   };
-
-//   //log in user
-
-//   const loginUser = async (req, res) => {
-//     try {
-//       const {username, password} = req.body;
-//       const userData = await knex('users').where({username, password}).select('*');
-//       if (userData.length > 0) {
-//         const user = userData[0]
-//         const token = jwt.sign(
-//           { username: user.username, email: user.email },
-//           process.env.SECRET_KEY
-//         );
-//         res.json({token});
-//       } else {
-//         // send error message + status code
-//         res.status(401).json({
-//           message: 'The password or username is incorrect.'
-//         });
-//       }
-//     } catch (error) {
-//       console.error("Error:", error);
-//       res.json("Error")
-//     }
-//   }
-    //   if (userData.length > 0) {
-    //     res.json("Success");
-    //   } else {
-    //     res.json(Failed);
-    //   }
-    // } catch (error) {
-    //   console.error("Error:", error);
-    //   res.json("Error")
-    // }
-  // }
 
 //single user
   const selectUser = async (req, res) => {

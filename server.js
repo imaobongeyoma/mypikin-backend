@@ -5,12 +5,13 @@ const jwt = require("jsonwebtoken");
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
-const multer = require("multer");
-
 const PORT = process.env.PORT || 5050;
-
+const providerRoutes = require("./routes/providerRoute");
+const daycareRoutes = require("./routes/daycareRoute");
+const authRoutes = require("./routes/authRoute");
 const app = express();
 
+//middlewares
 app.use(cors({ origin: "http://localhost:3000", credentials: true })); 
 
 app.use((req, res, next) => {
@@ -20,6 +21,18 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 app.use(cookieParser());
+
+//file
+app.use("/", express.static("./public/daycares"));
+app.use("/public/daycare", express.static("./public/daycares"));
+app.use("/public/profiles", express.static("./public/profiles/"));
+app.use("/", express.static("./public/profiles/"));
+
+
+//routes
+app.use("/users", providerRoutes);
+app.use("/auth", authRoutes);
+app.use("/daycares", daycareRoutes);
 
 
 app.listen(PORT, () =>
