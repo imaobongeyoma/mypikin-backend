@@ -4,6 +4,7 @@ const authController = require("../controllers/authController");
 const express = require("express");
 const app = express();
 app.use("/", express.static("./public/profiles/"))
+app.use("/", express.static("./public/daycares/"))
 
 
 const storage = multer.diskStorage({

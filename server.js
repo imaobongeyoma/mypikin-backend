@@ -24,9 +24,10 @@ app.use(cookieParser());
 
 //file
 app.use("/", express.static("./public/daycares"));
-app.use("/public/daycare", express.static("./public/daycares"));
-app.use("/public/profiles", express.static("./public/profiles/"));
 app.use("/", express.static("./public/profiles/"));
+app.use("/public/daycares", express.static("./public/daycares"));
+app.use("/public/profiles", express.static("./public/profiles/"));
+
 
 
 //routes
